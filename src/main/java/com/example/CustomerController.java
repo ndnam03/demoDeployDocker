@@ -12,12 +12,13 @@ public class CustomerController {
     private static final List<Customer> CUSTOMERS = List.of(
             new Customer(1L, "john", "doe", "john@javawhizz.com"),
             new Customer(2L, "mary", "public", "mary@javawhizz.com"),
-            new Customer(3L, "elon", "musk","elon@javawhizz.com"),
-            new Customer(4L, "dunny","duncan","dunny@javawhizz.com")
+            new Customer(3L, "elon", "musk", "elon@javawhizz.com"),
+            new Customer(4L, "dunny", "duncan", "dunny@javawhizz.com"),
+            new Customer(4L, "Khánh", "Khánh", "Khánh@javawhizz.com")
     );
 
     @GetMapping
-    public List<Customer> findAllCustomers(){
+    public List<Customer> findAllCustomers() {
         return CUSTOMERS;
     }
 }
